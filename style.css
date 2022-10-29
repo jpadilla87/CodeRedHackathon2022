@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+*{
+    font-family: 'Gilroy Regular', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #222226;
+    background-size: 100vw 100vh;
+    font-family: 'Gilroy Regular', sans-serif;
+    color: white;
+}
+body::-webkit-scrollbar {
+    width: 10px
+}
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(22, 22, 22);
+}
+body::-webkit-scrollbar-thumb {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(95, 95, 95);
+    background-clip: padding-box;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: lightgray;
+}
+a {
+    color: #a9e30b;
+}
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url(fonts/Gilroy-Light.otf);
+}
+@font-face {
+    font-family: 'FiraCode';
+    src: url(fonts/FiraCode-Medium.ttf);
+}
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url(fonts/Gilroy-Bold.otf);
+}
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url(fonts/Gilroy-Regular.otf);
+}
+@font-face {
+    font-family: 'Gilroy SemiBold';
+    src: url(fonts/Gilroy-Semibold.otf);
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url(fonts/GothamRnd-Medium.otf);
+}
+@font-face {
+    font-family: 'Gilroy Medium';
+    src: url(fonts/Gilroy-Medium.otf);
+}
+::selection {
+    background: grey;
+  }
+.container {
+    width: 100%;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    background-color: #222226;
+}

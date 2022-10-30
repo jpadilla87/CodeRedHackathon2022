@@ -185,7 +185,7 @@ ul#menu li a:hover {
 #tabfloralogo {
     width: 100px;
     height: 100px;
-    color: white;
+    filter: brightness(0) invert(1);
     display: flex;
     margin: 0;
 }

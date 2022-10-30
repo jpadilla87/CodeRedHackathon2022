@@ -3,7 +3,7 @@ html {
     scroll-padding-top: 90px;
 }
 *{
-    font-family: 'Gilroy Regular', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 body {
     box-sizing: border-box;
@@ -11,7 +11,8 @@ body {
     padding: 0;
     background-color: #222226;
     background-size: 100vw 100vh;
-    font-family: 'Gilroy Regular', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
     color: white;
 }
 body::-webkit-scrollbar {
@@ -71,11 +72,100 @@ a {
     margin-right: auto;
 }
 .navbar {
-    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     position: fixed;
     z-index: 1;
     background-color: #222226;
+}
+.main-logo {
+        cursor: pointer;
+        transition: .5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 50px;
+        filter: brightness(0) invert(1);
+}
+a #main-logo {
+    width: 50px;
+}
+.main-logo:hover {
+    transform:scale(1.1);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: auto;
+}
+nav ul {
+    width: fit-content;
+    padding: 0;
+    float: right;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: .5s ease-in-out;
+    font-size: 25px;
+
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-top: 5px;
+    height: 2px;
+    background: white;
+    border: 0px solid white;
+    border-radius: 2px;
+    transition: width .5s;
+}
+nav li:hover::after {
+    width: 101%;
+    transition: width .5s;
+}
+nav li:hover {
+    filter: invert(0%) sepia(97%) saturate(3431%) hue-rotate(17deg) brightness(91%) contrast(95%);
+}
+.house {
+    margin-left: 0;
+}
+.sources{
+    margin-left: 0;
+}
+.about {
+    margin-left: 0;
+}
+
+.graph-logo {
+    width: 20px;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    margin-right: 10px;
+}
+.house-logo {
+    width: 20px;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    margin-right: 10px;
+}
+.user-logo {
+    width: 20px;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    margin-right: 9px;
 }

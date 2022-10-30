@@ -164,7 +164,7 @@ ul#menu li a:hover {
     cursor: pointer;
 } 
 
-.tabflora1 {
+#tabflora1 {
     color: white;
     width: auto;
     height: 25vh;
@@ -173,7 +173,6 @@ ul#menu li a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px 20px 0px;
-    margin-top: 50px;
     margin-bottom: 50px;
     overflow: hidden;
 } 
@@ -281,4 +280,31 @@ line-height: 55px;
     filter: invert(12%) sepia(38%) saturate(1115%) hue-rotate(85deg) brightness(102%) contrast(94%);
     margin-left: auto;
     margin-right: auto;
+}
+
+#purpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+.purposetext {
+    text-align: center;
+    color: #093214;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.purposeparagraph {
+    text-align: center;
+    color: #093214;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 25px auto 0 auto;
+    line-height: 50px;
+    
 }

@@ -149,3 +149,75 @@ nav li:hover {
     margin-left: 50px;
     margin-right: 50px;
 } 
+
+.tabflora1 {
+    color: white;
+    width: auto;
+    height: 25vh;
+    display: flex;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+} 
+
+.lefttab {
+    width: fit-content;
+}
+
+.righttab {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tabfloralogo {
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+#greener {
+display: inline-block;
+font-weight: bold;
+font-size: 50px;
+max-width: 45%;
+line-height: 55px;
+}
+
+#flora {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 60%;
+    margin-top: 15px;
+}
+
+
+.bothtabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#leafbg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    min-width: 250px;
+    max-width: 500px;
+    clip-path: rect(0px, 500px, 500px, 0px);
+}
+
+#leafbg2 {
+    background: -webkit-linear-gradient(to right, #093214, rgba(0,0,0,0));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #093214, rgba(0,0,0,0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 2;
+}

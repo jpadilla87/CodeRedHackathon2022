@@ -1,14 +1,18 @@
-const myElement = document.getElementById("demo");
+navigator.geolocation
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    myElement.innerHTML = "Geolocation is not supported by this browser.";
-  }
+function successCallback(val)
+{
+  console.log(val);
 }
 
-function showPosition(position) {
-  myElement.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
+if ('geolocation' in navigator) {
+  /* geolocation is available */
+  navigator.geolocation.getCurrentPosition((position) => {
+    doSomething(position.coords.latitude, position.coords.longitude);
+  });
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+} else {
+  /* geolocation IS NOT available */
+  return "Location not available";
 }
+

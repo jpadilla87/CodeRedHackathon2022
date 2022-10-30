@@ -36,6 +36,9 @@ body::-webkit-scrollbar-thumb:hover {
 a {
     color: #093214;
 }
+#header h1{
+    margin:0px;
+}
 
 @font-face {
     font-family: 'FiraCode';
@@ -53,6 +56,7 @@ a {
 }
 .navbar {
     width: 100%;
+    top: 0;
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -147,14 +151,17 @@ ul#menu li a:hover {
     display: inline-block;
      margin-left: 125px;
     margin-right: 50px;
+    cursor: pointer;
 }
 .sources{
     margin-left: 50px;
     margin-right: 50px;
+    cursor: pointer;
 }
 .about {
     margin-left: 50px;
     margin-right: 50px;
+    cursor: pointer;
 } 
 
 .tabflora1 {
@@ -172,7 +179,9 @@ ul#menu li a:hover {
 } 
 
 .lefttab {
-    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 .righttab {
@@ -180,11 +189,12 @@ ul#menu li a:hover {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: end;
 }
 
 #tabfloralogo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     filter: brightness(0) invert(1);
     display: flex;
     margin: 0;
@@ -203,13 +213,12 @@ line-height: 55px;
     font-weight: 400;
     font-size: 20px;
     max-width: 60%;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 
 .bothtabs {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -223,8 +232,53 @@ line-height: 55px;
     clip-path: rect(0px, 500px, 500px, 0px);
 }
 
-#leafbg2 {
-    background: -webkit-linear-gradient(to right, #093214, rgba(0,0,0,0));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #093214, rgba(0,0,0,0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    z-index: 2;
+.stepslist {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    margin: 36px auto 36px auto;
+}
+
+.step1img {
+    max-width: 125px;
+    display: block;
+    filter: invert(12%) sepia(38%) saturate(1115%) hue-rotate(85deg) brightness(102%) contrast(94%);
+}
+.step2img {
+    max-width: 125px;
+    display: block;
+    filter: invert(12%) sepia(38%) saturate(1115%) hue-rotate(85deg) brightness(102%) contrast(94%);
+}
+.step3img {
+    max-width: 125px;
+    display: block;
+    filter: invert(12%) sepia(38%) saturate(1115%) hue-rotate(85deg) brightness(102%) contrast(94%);
+}
+.keysteps {
+    max-width: 200px;
+    display: block;
+    justify-content: center;
+}
+
+.key {
+    text-align: center;
+    color: #093214;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.steptext {
+    text-align: center;
+    color: #093214;
+    font-weight: 400;
+}
+
+
+.stepimg {
+    max-width: 125px;
+    display: block;
+    filter: invert(12%) sepia(38%) saturate(1115%) hue-rotate(85deg) brightness(102%) contrast(94%);
+    margin-left: auto;
+    margin-right: auto;
 }

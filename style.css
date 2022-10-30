@@ -76,7 +76,6 @@ a #main-logo {
 /* .main-logo:hover {
     transform:scale(1.1);
 } */
-
 #main-logo-name {
     text-decoration: none;
     font-family: 'Outfit', sans-serif;
@@ -126,14 +125,22 @@ nav li::after {
     background: #128230;
     border: 0px solid white;
     border-radius: 2px;
-    transition: width .5s;
+    transition: width 1s;
 }
 nav li:hover::after {
     width: 101%;
-    transition: width .5s;
+    transition: width 1s;
 }
 nav li:hover {
     scale: 1.05;
+    font-weight: 500;
+}
+ul#menu li a {
+    color: #128230;
+    font-weight: 400;
+    transition: width 1s;
+}
+ul#menu li a:hover {
     font-weight: 500;
 }
 .home {

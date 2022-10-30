@@ -15,4 +15,3 @@ if ('geolocation' in navigator) {
   /* geolocation IS NOT available */
   return "Location not available";
 }
-

@@ -1,13 +1,19 @@
+body {
+    background-color: #FFF5EC;
+    color: #093214;
+    font-weight: 600;
+    font-size: 24px;
+}
 path {
     stroke: white;
     fill:#128230 !important;
 
-    transition: fill .4s ease;
+    transition: fill .6s ease-in-out;
     transform-origin: center center;
 }
 
 path:hover {
-    fill: greenyellow !important;
+    fill: #093214 !important;
     cursor: pointer;
     transform: scale(1.005, 1.005);
 }

@@ -1,14 +1,14 @@
-const fetch = require("node-fetch");
+const myElement = document.getElementById("demo");
 
-const URL = "https://worldpopulationreview.com/state-rankings/oil-production-by-state";
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    myElement.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
 
-fetch( URL, {
-    mode: 'cors',
-    headers: {
-        'Access-Control-Allow-Origin':'*'
-    }
-})
-
-.then(response => response.text())
-.then(data => console.log(data.substring(data.indexOf("Oil"))))
-
+function showPosition(position) {
+  myElement.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
